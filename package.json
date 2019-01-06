@@ -20,7 +20,8 @@
     "express-rate-limit": "^3.3.2",
     "jsdoc": "^3.5.5",
     "pino": "^5.10.6",
-    "pino-pretty": "^2.5.0"
+    "pino-pretty": "^2.5.0",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",

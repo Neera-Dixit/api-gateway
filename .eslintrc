@@ -79,6 +79,7 @@
     }
   },
   "globals": {
+    "logger": true,
     "document": true,
     "window": true,
     "App": true,
