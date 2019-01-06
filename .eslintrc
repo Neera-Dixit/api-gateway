@@ -1,0 +1,89 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended"
+  ],
+  "plugins": [
+    "import",
+    "jest"
+  ],
+  "env": {
+    "node": true,
+    "jest/globals": true,
+    "browser": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      0,
+      "ForOfStatement"
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      "off",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ]
+      }
+    ],
+    "no-restricted-imports": ["off"],
+    "jsx-a11y/interactive-supports-focus": [
+      "off"
+    ],
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      2,
+      {
+        "components": [
+          "Label"
+        ],
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        },
+        "allowChildren": false
+      }
+    ],
+    "react/require-default-props": [
+      0
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ]
+  }, 
+  "settings": {
+    "import/resolver": {
+      "webpack" : {
+        "config": "node_modules/@ntnx/hulk-scripts/webpack/webpack.config.js"
+      }
+    }
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "App": true,
+    "__ENV__": true,
+    "LE": true,
+    "logService": true
+  }
+}
